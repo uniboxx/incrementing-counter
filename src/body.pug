@@ -1,0 +1,9 @@
+mixin countCont(icon, text, span)
+  .counter-container 
+    i.fab.fa-3x(class=`fa-${icon}`)
+    .counter(data-target=`${text}`)
+    span #{span}
+  
++countCont('twitter', '12000', 'Twitter Followers')
++countCont('youtube', '5000', 'Youtube Subscribers')
++countCont('facebook', '7500', 'Facebook Fans')
